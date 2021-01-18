@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body style="background-color: #ffffff;">
+    <div class="navbar">
+      <img src="img/giphy.gif" class="logo">
+      <nav>
+        <ul id="menuList">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Servicess</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <img src="img/manu.png" class="menu-icon"
+       onclick="togglemenu()">
+    </div>
+      <div class="container">
+        <div class="row">
+              <div class="col-1">
+                <h1>Xbox One </h1>
+                <h2>XboxSeries X/S</h2>
+                <h3>Wireless Controller for XboxOne/PC</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$50.20</h4>
+                <button type="button">Buy Now <img src="img/arraw.png"></button>
+              </div>
+              <div class="col-2">
+                  <img src="img/xbox.png" class="controller">
+                  <div class="color-box"></div>
+                  <div class="add-btn">
+                    <img src="img/odd.png">
+                    <p><small>Add to Cart</small></p>
+                  </div>
+              </div>
+        </div>
+      </div>
+      <div class="social-links">
+        <img src="img/fb.png">
+        <img src="img/twi.png">
+        <img src="img/int.png">
+        <!-- <h1>Maxsmiol@2021</h1> -->
+    </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu(){
+
+                if(menuList.style.maxHeight == "0px")
+                {
+                  menuList.style.maxHeight = "130px";
+                }
+                else
+                {
+                  menuList.style.maxHeight = "0px";
+                }
+
+            }
+        </script>
+  </body>
+</html>
